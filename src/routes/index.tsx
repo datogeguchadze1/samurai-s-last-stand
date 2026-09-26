@@ -58,6 +58,7 @@ const news = [
 
 function Crow({ index }: { index: number }) {
   const bird = crows[index];
+  if (!bird) return null;
   return (
     <span className="crow" style={{ '--left': bird.left, '--top': bird.top, '--size': bird.size, '--rotate': bird.rotate, '--duration': bird.duration, '--delay': bird.delay } as React.CSSProperties}>
       <svg viewBox="0 0 120 58" aria-hidden="true"><path fill="currentColor" d="M60 35C50 25 40 19 26 16 17 14 11 8 1 0c5 15 15 26 27 32-8-2-15-3-22-2 13 8 27 10 40 11l14 13 14-13c13-1 27-3 40-11-7-1-14 0-22 2 12-6 22-17 27-32-10 8-16 14-25 16-14 3-24 9-34 19Z" /></svg>
@@ -72,7 +73,8 @@ function Index() {
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [trailerOpen, setTrailerOpen] = useState(false);
   const [ripple, setRipple] = useState<{ x: number; y: number; key: number } | null>(null);
-  const weapon = weapons[weaponIndex];
+  const weapon = weapons[weaponIndex] ?? weapons[0];
+  if (!weapon) return null;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
