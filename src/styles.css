@@ -72,7 +72,7 @@ button { cursor: pointer; }
 .fog { position: absolute; z-index: 2; height: 20%; width: 130%; left: -15%; background: radial-gradient(ellipse, var(--smoke), transparent 68%); filter: blur(30px); animation: fog-drift 19s ease-in-out infinite alternate; pointer-events: none; }
 .fog-one { bottom: 0; } .fog-two { top: 17%; animation-delay: -8s; opacity: .4; }
 .dust { position: absolute; inset: 0; z-index: 4; pointer-events: none; background-image: radial-gradient(circle, oklch(1 0 0 / .4) 1px, transparent 1.5px); background-size: 151px 127px; opacity: .28; animation: dust-drift 30s linear infinite; }
-.hero-character { position: absolute; z-index: 3; height: 105%; width: auto; max-width: none; left: 50%; bottom: 2%; transform: translateX(-50%); transform-origin: bottom center; object-fit: contain; filter: brightness(.77) contrast(1.11) drop-shadow(20px 25px 25px oklch(0 0 0 / .75)); animation: character-enter 1.4s ease-out both, character-float 8s ease-in-out 1.4s infinite; pointer-events: none; }
+.hero-character { position: absolute; z-index: 3; height: 92%; width: auto; max-width: none; left: 53%; bottom: 6%; transform: translateX(-50%); transform-origin: bottom center; object-fit: contain; filter: brightness(.77) contrast(1.11) drop-shadow(20px 25px 25px oklch(0 0 0 / .75)); animation: character-enter 1.4s ease-out both, character-float 8s ease-in-out 1.4s infinite; pointer-events: none; }
 .crows { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden; }
 .crow { position: absolute; width: var(--size); height: auto; left: var(--left); top: var(--top); color: oklch(0.09 0.002 260); transform: rotate(var(--rotate)); filter: drop-shadow(4px 8px 3px oklch(0 0 0 / .24)); animation: bird-flight var(--duration) ease-in-out var(--delay) infinite alternate; }
 .crow svg { width: 100%; height: auto; animation: wing-flap 2.8s ease-in-out infinite alternate; }
@@ -100,7 +100,8 @@ button { cursor: pointer; }
 .download-button { position: relative; isolation: isolate; min-width: 162px; height: 49px; border: 1px solid var(--primary); border-radius: 3px; background: oklch(.12 .02 25 / .88); color: var(--primary-foreground); font-family: 'Rajdhani', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: .08em; box-shadow: 0 0 20px var(--shadow-red), inset 0 0 14px oklch(.48 .19 25 / .36); transition: transform .3s, box-shadow .3s, background .3s; overflow: hidden; animation: neon-pulse 3s ease-in-out infinite; }
 .download-button:hover { transform: scale(1.08); background: var(--primary); box-shadow: 0 0 34px var(--shadow-red); }
 .download-button .ripple { position: absolute; border-radius: 50%; width: 10px; height: 10px; background: oklch(1 0 0 / .55); transform: translate(-50%, -50%) scale(0); animation: ripple .6s ease-out; pointer-events: none; }
-.hero-bottom { position: absolute; z-index: 9; left: 4%; right: 4%; bottom: 4%; display: flex; align-items: end; justify-content: space-between; font-size: 11px; }
+.hero-bottom { position: absolute; z-index: 9; left: 4%; right: 4%; bottom: 4%; display: flex; align-items: end; justify-content: space-between; font-size: 11px; pointer-events: none; }
+.hero-bottom a { pointer-events: auto; }
 .platforms { display: flex; flex-direction: column; gap: 9px; color: var(--foreground); }
 .platforms small { font-size: 10px; font-weight: 600; }
 .platform-icons, .social-links { display: flex; gap: 9px; align-items: center; }
