@@ -237,9 +237,10 @@ button { cursor: pointer; }
   .download-wrap { bottom: 5%; }
   .download-button { min-width: 140px; height: 44px; font-size: 15px; }
   .hero-bottom { left: 5%; right: 5%; bottom: 3%; }
-  .platforms { display: none; }
-  .social-links { position: static; transform: none; }
-  .next-link { font-size: 12px; }
+  .platforms { display: contents; }
+  .platforms small, .platform-icons { display: none; }
+  .social-links { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); }
+  .next-link { margin-left: auto; font-size: 12px; }
   .crow { opacity: .78; }
   .section { padding: 85px 6%; }
   .story-section { min-height: 710px; align-items: end; }
