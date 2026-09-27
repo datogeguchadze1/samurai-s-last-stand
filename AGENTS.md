@@ -9,5 +9,5 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the single-page samurai experience in the TanStack index route, using generated source-imported art and shared CSS tokens; this preserves the project's routing and a consistent cinematic visual system.
+- Keep the single-page original western experience in the TanStack index route, using generated source-imported art and shared CSS tokens; this preserves routing and a consistent cinematic visual system.
 - Treat the download as a downloadable artwork and the trailer as an honest availability notice until game binaries/video exist; this avoids false product claims.
